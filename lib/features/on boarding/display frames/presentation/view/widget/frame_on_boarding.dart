@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../../../../core/utils/text_theme_app.dart';
 import '../../../model/frame_on_boarding_model.dart';
 
 class FrameOnBoarding extends StatelessWidget {
@@ -15,9 +16,9 @@ class FrameOnBoarding extends StatelessWidget {
       children: [
         Image.asset(frameOnBoardingModel.image),
         SizedBox(height: 25.h),
-        Text(frameOnBoardingModel.title,style: Theme.of(context).textTheme.titleMedium,),
+        Text(frameOnBoardingModel.title,style: TextThemeApp.font17BlackMedium),
         SizedBox(height: 17.h),
-        Text(frameOnBoardingModel.desc,textAlign: TextAlign.center,style: Theme.of(context).textTheme.bodyMedium,),
+        Text(frameOnBoardingModel.desc,style:  TextThemeApp.font15greyRegular,textAlign: TextAlign.center,),
       ],
     );
   }

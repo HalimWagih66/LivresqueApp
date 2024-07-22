@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../../../../core/utils/text_theme_app.dart';
+
 class CustomElevatedButton extends StatelessWidget {
   const CustomElevatedButton({super.key, required this.onPressed, required this.background, required this.text});
   final void Function() onPressed;
@@ -16,6 +18,6 @@ class CustomElevatedButton extends StatelessWidget {
             padding: EdgeInsets.symmetric(vertical: 8.h,horizontal: 13.w),
             backgroundColor: background
         ),
-        child: Text(text,style: Theme.of(context).textTheme.titleMedium?.copyWith(color: Colors.white),));
+        child: Text(text,style:  TextThemeApp.font14WhiteBold));
   }
 }

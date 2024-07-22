@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../model/frame_on_boarding_model.dart';
 import 'frame_moving_part.dart';
-import 'frame_on_boarding.dart';
+import 'frame_on_boarding_page_view_builder.dart';
 
 class DisplayFramesViewBody extends StatefulWidget {
   const DisplayFramesViewBody({
@@ -36,42 +35,9 @@ class _DisplayFramesViewBodyState extends State<DisplayFramesViewBody> {
             child: FrameOnBoardingPageViewBuilder(pageController: pageController),
           ),
           SizedBox(height: 106.h),
-          FrameMovingPart(selectedDot: currentPage, pageController: pageController)
+          FrameMovingPart(pageController: pageController)
         ],
       ),
     );
-  }
-}
-
-class FrameOnBoardingPageViewBuilder extends StatelessWidget {
-  const FrameOnBoardingPageViewBuilder({
-    super.key,
-    required this.pageController,
-  });
-
-  final PageController pageController;
-  final List<FrameOnBoardingModel> items = const [
-    FrameOnBoardingModel(
-        image: "assets/images/on_boarding/Frame_1.png",
-        title: "Read your e-books",
-        desc:
-        "Contrary You can buy any books online. we will deliver the book within 2 days in tashkent3 days within Uzbekistan"),
-    FrameOnBoardingModel(
-        image: "assets/images/on_boarding/Frame_2.png",
-        title: "Order your books",
-        desc:
-        "Contrary You can buy any books online. we will deliver the book within 2 days in tashkent3 days within Uzbekistan"),
-    FrameOnBoardingModel(
-        image: "assets/images/on_boarding/Frame_3.png",
-        title: "Now you can listen audio books",
-        desc:
-        "We have vide range of audio books that you can enjoy listening books anytime, anywhere"),
-  ];
-  @override
-  Widget build(BuildContext context) {
-    return PageView.builder(
-      controller: pageController,
-        itemBuilder: (context, index) => FrameOnBoarding(frameOnBoardingModel: items[index],),
-        itemCount: items.length);
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:livresque_app/core/utils/text_theme_app.dart';
 
 class GetStartedView extends StatelessWidget {
   const GetStartedView({super.key});
@@ -19,27 +20,33 @@ class GetStartedView extends StatelessWidget {
             Image.asset("assets/images/on_boarding/image_get_started.png"),
             SizedBox(height: 37.h),
             Text("Read your favourite book from here.",
-                style: Theme.of(context).textTheme.displayLarge),
+                style: TextThemeApp.font36BlackExtraBold),
             const SizedBox(height: 16),
             Text(
               "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-              style: Theme.of(context).textTheme.displaySmall,
+              style: TextThemeApp.font13WhiteRegular,
             ),
             SizedBox(height: 48.h),
             ElevatedButton(
               onPressed: () {},
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.black,padding: EdgeInsets.symmetric(vertical: 15.h)),
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.black,
+                  padding: EdgeInsets.symmetric(vertical: 15.h)),
               child: Text(
                 "Get Started",
-                style: Theme.of(context).textTheme.displaySmall?.copyWith(fontSize: 14.h,fontWeight: FontWeight.w700,letterSpacing: 0.9),
+                style: TextThemeApp.font14WhiteBold,
               ),
             ),
             const SizedBox(height: 19),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Already have an account? ",style:Theme.of(context).textTheme.displaySmall),
-                Text("Login",style:Theme.of(context).textTheme.displaySmall?.copyWith(fontWeight: FontWeight.w700))
+                Text("Already have an account? ",
+                    style: TextThemeApp.font13WhiteRegular),
+                TextButton(
+                    style: TextButton.styleFrom(padding: EdgeInsets.zero),
+                    onPressed: () {},
+                    child: Text("Login", style: TextThemeApp.font14WhiteBold))
               ],
             ),
             SizedBox(height: 57.h)
