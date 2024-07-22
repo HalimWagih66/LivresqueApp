@@ -15,6 +15,18 @@ class ThemeApp{
         color: Colors.grey,
         fontSize: 15.sp,
       ),
+      displayLarge: TextStyle(
+        fontFamily: "PlusJakartaSans",
+        color: const Color(0xffffffff),
+        fontSize: 36.sp,
+        fontWeight: FontWeight.w800
+      ),
+      displaySmall: TextStyle(
+        fontWeight: FontWeight.w400,
+        color: Colors.white,
+        fontSize: 13.sp
+      ),
+
     ),
   );
 }

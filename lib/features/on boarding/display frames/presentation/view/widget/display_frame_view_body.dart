@@ -1,19 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:livresque_app/features/on%20boarding/presentation/view/widget/frame_on_boarding.dart';
-
 import '../../../model/frame_on_boarding_model.dart';
 import 'frame_moving_part.dart';
+import 'frame_on_boarding.dart';
 
-class OnBoardingViewBody extends StatefulWidget {
-  const OnBoardingViewBody({
+class DisplayFramesViewBody extends StatefulWidget {
+  const DisplayFramesViewBody({
     super.key,
   });
-
   @override
-  State<OnBoardingViewBody> createState() => _OnBoardingViewBodyState();
+  State<DisplayFramesViewBody> createState() => _DisplayFramesViewBodyState();
 }
-class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
+class _DisplayFramesViewBodyState extends State<DisplayFramesViewBody> {
   PageController pageController = PageController();
   int currentPage = 0;
   @override

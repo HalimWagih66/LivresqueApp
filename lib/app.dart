@@ -1,8 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:livresque_app/core/utils/theme.dart';
-import 'package:livresque_app/features/on%20boarding/presentation/view/on_boarding_view.dart';
+import 'package:livresque_app/features/on%20boarding/get%20started/presentation/view/get_started_view.dart';
+
+import 'features/on boarding/display frames/presentation/view/display_frame_view.dart';
 
 class LivresqueApp extends StatelessWidget {
   const LivresqueApp({super.key});
@@ -17,11 +18,13 @@ class LivresqueApp extends StatelessWidget {
       builder: (context, child) => MaterialApp(
         debugShowCheckedModeBanner: false,
         routes: {
-          OnBoardingView.routeName:(context)=>const OnBoardingView()
+          DisplayFramesView.routeName:(context)=>const DisplayFramesView(),
+          GetStartedView.routeName:(context)=> const GetStartedView()
         },
-        initialRoute: OnBoardingView.routeName,
+        initialRoute: DisplayFramesView.routeName,
         theme: ThemeApp.lightTheme,
       ),
     );
   }
+
 }

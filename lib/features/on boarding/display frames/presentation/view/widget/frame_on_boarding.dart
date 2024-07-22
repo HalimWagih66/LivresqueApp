@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:livresque_app/features/on%20boarding/model/frame_on_boarding_model.dart';
+
+import '../../../model/frame_on_boarding_model.dart';
 
 class FrameOnBoarding extends StatelessWidget {
   const FrameOnBoarding({
