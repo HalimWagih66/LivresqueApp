@@ -3,7 +3,7 @@ import 'package:livresque_app/features/on%20boarding/display%20frames/presentati
 
 class DisplayFramesView extends StatelessWidget {
   const DisplayFramesView({super.key});
-  static const routeName = "DisplayFramesView";
+  static const routeName = "/";
   @override
   Widget build(BuildContext context) {
     return const Scaffold(

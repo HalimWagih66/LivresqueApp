@@ -11,7 +11,7 @@ import '../../../../../core/utils/widgets/buttons/custom_elevated_button.dart';
 
 class SignUpView extends StatelessWidget  {
   const SignUpView({super.key});
-  static const routeName = "SignUpView";
+  static const routeName = "/SignUpView";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,11 +30,12 @@ class SignUpView extends StatelessWidget  {
               const SizedBox(height: 25),
               const FormSignUp(),
               const SizedBox(height: 25),
-              CustomElevatedButton(
+              CustomElevatedButtonInAuth(
                   onPressed: () {
         
                   }, background:  Colors.yellow,
-                  text:  "Sign Up"
+                  child:  Text("Sign Up",style: TextThemeApp.font17BlackMedium,)
+
               ),
               const SizedBox(height: 15),
               CustomElevatedButtonInAuth(

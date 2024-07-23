@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:livresque_app/core/utils/theme/text_theme_app.dart';
 import 'package:livresque_app/features/auth/sign_up/presentation/view/sign_up_view.dart';
 
 class GetStartedView extends StatelessWidget {
   const GetStartedView({super.key});
 
-  static const routeName = "GetStartedView";
+  static const routeName = "/GetStartedView";
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +22,7 @@ class GetStartedView extends StatelessWidget {
             Image.asset("assets/images/on_boarding/image_get_started.png"),
             SizedBox(height: 37.h),
             Text("Read your favourite book from here.",
-                style: TextThemeApp.font36BlackExtraBold),
+                style: TextThemeApp.font36BWhiteExtraBold),
             const SizedBox(height: 16),
             Text(
               "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -30,7 +31,7 @@ class GetStartedView extends StatelessWidget {
             SizedBox(height: 48.h),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, SignUpView.routeName);
+                GoRouter.of(context).push(SignUpView.routeName);
               },
               style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.black,
