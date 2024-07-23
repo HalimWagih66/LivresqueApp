@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../../../core/utils/text_theme_app.dart';
+import '../../../../../../core/utils/theme/text_theme_app.dart';
 import '../../../model/frame_on_boarding_model.dart';
 
 class FrameOnBoarding extends StatelessWidget {

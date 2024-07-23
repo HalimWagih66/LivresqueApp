@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:livresque_app/core/utils/theme.dart';
+import 'package:livresque_app/features/auth/sign_up/presentation/view/sign_up_view.dart';
 import 'package:livresque_app/features/on%20boarding/get%20started/presentation/view/get_started_view.dart';
 
+import 'core/utils/theme/theme.dart';
 import 'features/on boarding/display frames/presentation/view/display_frame_view.dart';
 
 class LivresqueApp extends StatelessWidget {
@@ -19,7 +20,8 @@ class LivresqueApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         routes: {
           DisplayFramesView.routeName:(context)=>const DisplayFramesView(),
-          GetStartedView.routeName:(context)=> const GetStartedView()
+          GetStartedView.routeName:(context)=> const GetStartedView(),
+          SignUpView.routeName:(context)=> const SignUpView()
         },
         initialRoute: DisplayFramesView.routeName,
         theme: ThemeApp.lightTheme,

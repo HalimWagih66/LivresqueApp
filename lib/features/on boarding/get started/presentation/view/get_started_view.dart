@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:livresque_app/core/utils/text_theme_app.dart';
+import 'package:livresque_app/core/utils/theme/text_theme_app.dart';
+import 'package:livresque_app/features/auth/sign_up/presentation/view/sign_up_view.dart';
 
 class GetStartedView extends StatelessWidget {
   const GetStartedView({super.key});
@@ -28,7 +29,9 @@ class GetStartedView extends StatelessWidget {
             ),
             SizedBox(height: 48.h),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, SignUpView.routeName);
+              },
               style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.black,
                   padding: EdgeInsets.symmetric(vertical: 15.h)),

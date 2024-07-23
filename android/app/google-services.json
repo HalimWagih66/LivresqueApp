@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "112997336412",
+    "project_id": "livresque-app",
+    "storage_bucket": "livresque-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112997336412:android:96c5f02d911d67c82e6d99",
+        "android_client_info": {
+          "package_name": "com.example.livresque_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6DFxnZ7U_kjoCmNEeBlXKqJeNrx4C8Vo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

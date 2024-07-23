@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:livresque_app/features/on%20boarding/get%20started/presentation/view/get_started_view.dart';
-import '../../../../../../core/utils/text_theme_app.dart';
-import 'custom_elevated_button.dart';
+import '../../../../../../core/utils/theme/text_theme_app.dart';
+import '../../../../../../core/utils/widgets/buttons/custom_elevated_button.dart';
 import 'list_dots.dart';
 
 class FrameMovingPart extends StatelessWidget {
